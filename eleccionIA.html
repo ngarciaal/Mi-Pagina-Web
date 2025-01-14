@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Natalia García">
+    <meta name="description" content="Página web IApredizaje">
+    <title>IApredizaje</title>
+    <style>
+        /* Aquí puedes agregar estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction:column ;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('/FOTOs/Fondo.png'); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+
+        }
+        .text-container{
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px; 
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        p{
+            text-align: center;
+            max-width: 600px;
+        }
+        .btn{
+            background-color: #7eab7f;
+            color: white;
+            padding:30px 20px;
+            font-size: 1rem;
+            border:#465c47;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        .btn-Resultados{
+            background-color: #e5af6d;
+            color: white;
+            padding:30px 20px;
+            font-size: 1rem;
+            border:#465c47;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        .btn:hover{
+            background-color: #465c47;
+        }
+        .btn-Resultados:hover{
+            background-color: #7b643a;
+        }
+        .button-results {
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <h1>IApredizaje</h1>
+        <a href="ConIA.html"><button class="btn">Con Inteligencia Artificial</button></a>
+        <a href="SinIA.html"><button class="btn">Sin Inteligencia Artificial</button></a>
+        <div class="button-results">
+            <a href="Resultados.html"><button class="btn-Resultados">Resultados</button></a>
+        </div>
+    </div>
+</body>
+</html>
