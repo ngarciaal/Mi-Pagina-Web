@@ -7,13 +7,12 @@
     <meta name="description" content="Página web IApredizaje">
     <title>IApredizaje</title>
     <style>
-        /* Aquí puedes agregar estilos CSS */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction:column ;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -22,52 +21,72 @@
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-
         }
-        .text-container{
+
+        .text-container {
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
-            border-radius: 10px; 
+            border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
+            max-width: 90%; /* Ajustar para pantallas pequeñas */
         }
+
         h1 {
             font-size: 2rem;
+            margin-bottom: 20px;
         }
-        p{
-            text-align: center;
-            max-width: 600px;
-        }
-        .btn{
+
+        .btn {
             background-color: #7eab7f;
             color: white;
-            padding:30px 20px;
+            padding: 15px 20px;
             font-size: 1rem;
-            border:#465c47;
+            border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 0px;
-            margin-bottom: 10px;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+            width: 100%; /* Asegura que el botón ocupe el ancho en móviles */
+            max-width: 300px; /* Tamaño máximo para que no se vea enorme */
         }
-        .btn-Resultados{
-            background-color: #e5af6d;
-            color: white;
-            padding:30px 20px;
-            font-size: 1rem;
-            border:#465c47;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 0px;
-            margin-bottom: 10px;
-        }
-        .btn:hover{
+
+        .btn:hover {
             background-color: #465c47;
         }
-        .btn-Resultados:hover{
+
+        .btn-Resultados {
+            background-color: #e5af6d;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+            width: 100%; /* Asegura que el botón ocupe el ancho en móviles */
+            max-width: 300px;
+        }
+
+        .btn-Resultados:hover {
             background-color: #7b643a;
         }
+
         .button-results {
-           text-align: center;
+            text-align: center;
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem; /* Reducir el tamaño del título */
+            }
+
+            .btn, .btn-Resultados {
+                font-size: 0.9rem; /* Botones más compactos */
+                padding: 12px 15px;
+            }
         }
     </style>
 </head>
