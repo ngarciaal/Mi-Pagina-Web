@@ -12,72 +12,114 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction:column ;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             color: #333;
-            background-image: url('Fondo.png'); 
+            background-image: url('Fondo.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
         }
-        .text-container{
+
+        .text-container {
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
-            border-radius: 10px; 
+            border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
+            max-width: 90%; /* Ajuste para pantallas pequeñas */
         }
-        p{
+
+        p {
             text-align: center;
             max-width: 600px;
+            margin: 0 auto; /* Centramos el texto */
+            line-height: 1.5; /* Mejoramos la legibilidad */
         }
-        .btn{
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
             background-color: #7eab7f;
             color: white;
-            padding:30px 150px;
+            padding: 15px 20px;
             font-size: 1rem;
-            border:#465c47;
+            border: none;
             border-radius: 5px;
             cursor: pointer;
             margin-top: 20px;
+            transition: background-color 0.3s;
+            width: 100%; /* Asegura que el botón ocupe todo el ancho disponible en móviles */
+            max-width: 300px; /* Tamaño máximo del botón */
         }
-        .btn:hover{
+
+        .btn:hover {
             background-color: #465c47;
         }
-        .btn-container{
-            display:flex;
+
+        .btn-container {
+            display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap; /* Asegura que los botones se ajusten en móviles */
         }
-        .back-btn{
+
+        .back-btn {
             position: absolute;
             top: 20px;
-            left:20px;
+            left: 20px;
             background-color: rgb(165, 117, 81);
-            color:white;
-            padding: 10px 20px;
-            border:none;
+            color: white;
+            padding: 10px 15px;
+            border: none;
             border-radius: 5px;
-            cursor:pointer;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        .back-btn:hover{
+
+        .back-btn:hover {
             background-color: rgb(135, 77, 22);
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem; /* Reducir tamaño del título */
+            }
+
+            .btn {
+                font-size: 0.9rem; /* Botones más compactos */
+                padding: 12px 15px;
+            }
+
+            .back-btn {
+                top: 10px;
+                left: 10px;
+                font-size: 0.9rem; /* Botón "Volver" más pequeño */
+                padding: 8px 12px;
+            }
         }
     </style>
 </head>
 <body>
-     <div class="text-container">
+    <div class="text-container">
         <a href="eleccionIA.html"><button class="back-btn">Volver</button></a>
         <h1>Explicación del procedimiento</h1>
-        <p>Antes de comenzar, quiero agradecerte por tu tiempo y tu interés en participar en este proyecto.
-            En esta sección, encontrarás una serie de cuestionarios relacionados con tres temas fundamentales de la informática: redes, ciberseguridad y componentes de un ordenador. El objetivo es evaluar cómo comprendes estos conceptos antes y después de una breve explicación que he preparado.
+        <p>
+            Antes de comenzar, quiero agradecerte por tu tiempo y tu interés en participar en este proyecto.
+            En esta sección, encontrarás una serie de cuestionarios relacionados con tres temas fundamentales de la informática: redes, ciberseguridad y componentes de un ordenador. 
+            El objetivo es evaluar cómo comprendes estos conceptos antes y después de una breve explicación que he preparado. 
             Tu compromiso es muy importante para mí, dedica un momento a responder con sinceridad y atención.
-            ¡Gracias por tu ayuda y por ser parte de mi Trabajo de Fin de Grado! 💻✨</p>  
+            ¡Gracias por tu ayuda y por ser parte de mi Trabajo de Fin de Grado! 💻✨
+        </p>
         <div class="btn-container">
-        <a href="CuestionarioConIA.html"><button class="btn">Comenzar</button></a>
+            <a href="CuestionarioConIA.html"><button class="btn">Comenzar</button></a>
         </div>
     </div>
 </body>
