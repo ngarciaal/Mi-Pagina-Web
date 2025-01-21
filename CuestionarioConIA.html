@@ -24,9 +24,7 @@
             background-position: center;
         }
         h1{
-            padding-top: 2cap;
             margin: 20px 0;
-            font-family: Arial, sans-serif;
             font-size: 2rem;
             color: #333;
             text-align: center;
@@ -50,6 +48,7 @@
             border:none;
             border-radius: 5px;
             cursor:pointer;
+            transition: background-color 0.3s;
         }
         .back-btn:hover{
             background-color: rgb(135, 77, 22);
@@ -64,22 +63,46 @@
         .btn{
             background-color: #7eab7f;
             color: white;
-            padding:30px 150px;
+            padding: 15px 40px;
             font-size: 1rem;
-            border:#465c47;
+            border: none;
             border-radius: 10px;
             cursor: pointer;
             margin-top: 20px;
-            margin-bottom: 20px;
-            margin-left: 350px;;
+            transition: background-color 0.3s;
+            text-align: center;
         }
         .btn:hover{
             background-color: #465c47;
         }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+        }
+         /* Media query para pantallas pequeñas */
+         @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            iframe {
+                height: 400px;
+            }
+
+            .btn {
+                font-size: 0.9rem;
+                padding: 12px 30px;
+            }
+
+            .back-btn {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
+        }
     </style>
     <script>
         window.onload = function() {
-            alert('Cuando finalice el formulario, recuerde darle al botón "Fin"');
+            alert('Gracias por participar. Al finalizar el formulario, por favor, pulsa el botón "Fin" para completar el proceso, y se te redireccionará a la página de inicio.');
         };
     </script>
 </head>
@@ -88,11 +111,10 @@
     <h1>Cuestionario</h1>
     <div class="text-container">
         <a href="ConIA.html"><button class="back-btn">Volver</button></a>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCmforl6ACRl87mEnO5XeBU3ETcZtOoUI_BpGmUfbes-4drQ/viewform?usp=share_link" 
-            frameborder="0" 
-            marginheight="0" 
-            marginwidth="0">Cargando…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCmforl6ACRl87mEnO5XeBU3ETcZtOoUI_BpGmUfbes-4drQ/viewform?usp=share_link"></iframe>
     </div>
-    <a href="index.html"><button class="btn">Fin</button></a>
+    <div class="btn-container">
+        <a href="index.html"><button class="btn">Fin</button></a>
+    </div>
 </body>
 </html>
